@@ -1,0 +1,9 @@
+define accesspolicy ZAC_AUDITING_ASPECT_HML {
+    @EndUserText.label: 'Politica de Acceso a la Factura'
+    define aspect ZAC_AUDITING_ASPECT_HML as
+        select from zcds_auditing_aspect_hml with user element CreatedBy
+            {
+                InvoiceId
+            }
+            
+}

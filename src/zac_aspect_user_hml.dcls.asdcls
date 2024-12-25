@@ -1,0 +1,6 @@
+@EndUserText.label: 'Aspecto Usuario'
+@MappingRole: true
+define role ZAC_ASPECT_USER_HML {
+    grant select on zcds_com_inv_2_hml
+              where CreatedBy = aspect user;
+}

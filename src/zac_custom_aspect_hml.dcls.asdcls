@@ -1,0 +1,8 @@
+@EndUserText.label: 'Acceso Control Aspecto Personalizado'
+@MappingRole: true
+define role ZAC_CUSTOM_ASPECT_HML {
+    grant select on zcds_auditing_aspect_hml
+          where (InvoiceId) = aspect ZAC_AUDITING_ASPECT_HML
+            AND InvAmount > 100;
+                        
+}
